@@ -7,13 +7,72 @@
 /* *********************************** */
 
 /* Tipografía */
-@font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+
+* {
+  font-family: 'Iceberg', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--blanco);
 }
 
 /* ******************************** */
 
 /* Colores */
+:root {
+  /* Mode 1 */
+  /* colors */
+  --azul-fuerte: #042767;
+  --blanco: #f2f2f2;
+  --morado: #662fcf;
+  --rosita: #ba60c4;
+  --rosita-claro: #baaee5;
+  --rosita-oscuro: #af62df;
+}
 
 /* ******************************** */
+
+
+
+header {
+  background-color: var(--azul-fuerte);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 100px;
+
+
+  & .mainheader {
+    display: flex;
+    justify-content: space-between;
+    width: 1640px;
+  }
+
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+    padding: 20px 0px;
+
+    & a {
+      text-decoration: none;
+      /* background-color: green; */
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Roboto Flex', sans-serif;
+    }
+
+
+
+    & .get__started {
+      color: var(--azul-fuerte);
+      background-color: var(--blanco);
+      border-radius: 50px;
+      padding: 10px 25px;
+    }
+
+
+  }
+}
